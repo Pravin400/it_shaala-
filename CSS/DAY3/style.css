@@ -1,0 +1,34 @@
+/*  h1 {
+    text-align: center;
+    color: rgb(234, 234, 234);
+    background-color: black
+}
+
+/* class selector  */
+
+.heading {
+    color: blueviolet
+}
+
+/* id selector */
+
+#para{
+    color: blueviolet;
+}
+p{
+    text-align: left;
+    font-size: 50px;
+} */
+/* universal selector */
+
+* {
+    /* color: black;
+    background-color: aqua; */
+
+/* web search */
+
+    /* padding: 0%;
+    margin: 0%;
+    box-sizing: border-box; */
+
+}
