@@ -35,10 +35,11 @@
 
  /* grand pafarent styling */
  .parent .grand .red {
-    color: red;
-    font-size: 30px;
+    color: rgb(111, 0, 255);
+    font-size: 50px;
     background-color: aquamarine;
     border: 4px double;
+    border-color: brown;
     /* border-width: 4px;
     border-style: dotted;
     border-color: black; */
