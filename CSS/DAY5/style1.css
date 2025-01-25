@@ -1,0 +1,14 @@
+/* *{
+    padding: 0%;
+    margin: 0%;
+    box_s
+} */
+.img img {
+    border-radius: 30%; /* Makes the image circular */
+    margin: 20px;
+    padding: 10px;
+    height: 500px; /* Ensure equal height and width */
+    width: 500px;
+    
+    /* object-fit: cover;  Ensures the image doesn't distort  */
+}

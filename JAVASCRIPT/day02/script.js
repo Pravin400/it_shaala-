@@ -45,3 +45,31 @@ console.log(marks);
 const marks1 = 10;
 // const marks1;
 console.log(marks1);
+
+// Var problem 
+
+// var a = 10;
+// var b = 120;
+// var c = 130;
+
+// {    
+// var a = 1235;
+// var b = 250;
+// console.log(a,b)
+// }
+
+// console.log(a,b)
+
+//instead of using var use the let  
+
+let a = 10;
+let b = 120;
+let c = 130;
+
+{    
+let a = 1235;
+let b = 250;
+console.log(a,b)
+}
+
+console.log(a,b)

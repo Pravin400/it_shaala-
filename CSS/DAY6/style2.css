@@ -1,0 +1,26 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    /* background-color: aqua; */
+}
+
+.container{
+    height: 500px;
+    /* border: 5px solid blueviolet; */
+    background-color: brown;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+
+    
+}
+.container .child
+{   display: block;
+    height: 100px;
+    width: 100px;
+    border: 10px groove burlywood;
+    background-color: black;
+    width: 50px;
+    
+}

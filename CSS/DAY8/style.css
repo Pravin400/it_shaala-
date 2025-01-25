@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 500px; 
+   
+    border: 2px solid black;
+    display: flex;
+    flex-wrap:wrap;
+    /* flex-wrap: wrap-reverse;
+    flex-wrap: nowrap; */
+
+    width: 100%;
+    /* gap will be applicabe when we use display flex */
+    gap: 50px;
+    row-gap: 10px;
+    column-gap:30px;
+    /* gap : 30px 80px; /*row gap then column gap*/ 
+    align-items: center;/*use when haing single line to align in center*/
+    align-content: center;/*use when haing multiple line to align in center*/
+
+}
+.order-1{
+    order: 3;
+    flex-grow: 3;
+}
+.order-2{
+    order: 2;
+    flex-grow: 2;
+}
+.order-3{
+    order: 1;
+    flex-shrink: 1;
+    z-index:20px;
+}
+.child{
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    border: 2px solid red;
+    margin: 50px;
+    color: azure;
+   
+}

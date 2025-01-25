@@ -1,0 +1,37 @@
+/* resent styling will be added to the element */
+/* in styling order matters */
+/* h1{
+    color: red;
+}
+h1{
+    color: aqua;
+} */
+
+/* class having more importance than tag */
+
+#high{
+    color: brown;
+}
+.kk{
+    color: blue;
+}
+/* higher  priority for id element*/
+#high.kk{
+    color: blueviolet;
+}
+
+h1{
+    color: rgb(218, 63, 49)!important;;
+} 
+
+/* we apply styles on parent it inherit to child */
+.parent{
+    font-size: 30px;
+    color: aqua;
+}
+.parent meta{
+    color: blueviolet;
+}
+p{
+    color: brown;
+}
