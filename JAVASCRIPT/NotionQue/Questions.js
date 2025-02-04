@@ -9,10 +9,11 @@
 
 // function increment (num){
 //     num ++;
-//     return num
+//     return num*20;
 // }
 // let num1 = 10;
-
+// let c = increment(num1)
+// console.log(c);
 // console.log(increment(num1));
 
 // 3. Write a function that takes the base and height of a triangle and return its area.
@@ -73,17 +74,18 @@
 
 // reversse stream
 
-// let num1 = 466;
-// let length1 = Math.floor(Math.log10(num1)) + 1;
-// console.log(length1 )
-// let reverse = "";
+let num1 = 466;
+let length1 = Math.floor(Math.log10(num1)) + 1;
+console.log(length1 )
+let reverse = "";
 
-// for(let i = 0;i<length1;i++){
-//     let div = Math.floor(num1 % 10);
-//     reverse += div;
-//     num1 = num1/10;
-// }
-// console.log(reverse)
+for(let i = 0;i<length1;i++){
+    let div = Math.floor(num1 % 10);
+    reverse += div;
+    num1 = num1/10;
+}
+console.log(reverse)
+
 
 
 // palindrome

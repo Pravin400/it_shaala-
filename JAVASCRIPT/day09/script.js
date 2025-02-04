@@ -56,7 +56,7 @@ console.log(Math.max(k1,k2));
 // finding greater between 3 numbers
 console.log(Math.max(k1,k2,k3));
 
-// without using the mac method 
+// without using the math method 
 if (k1 > k2){
     console.log(k1,"Is greater")
 }

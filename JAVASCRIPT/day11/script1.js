@@ -13,3 +13,4 @@ for(let i = 0; i < patt; i ++ ){
     }
     console.log(store)
 }
+
