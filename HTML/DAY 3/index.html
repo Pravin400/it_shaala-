@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        table{
+            border-collapse: collapse;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Normal colum Made</h1>
+    <table border="1">
+        <thead>
+        <tr>
+            <th>Sr.no</th>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Role</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>ganesh</td>
+            <td>pune</td>
+            <td>trannie</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>ganesh</td>
+            <td>pune</td>
+            <td >trannie</td>
+        </tr>
+
+    </tbody>
+    </table>
+    <h1>Column Collapse</h1>
+    <table border="1">
+     
+            <thead>
+                <tr>
+                    <th>sr.no</th>
+                    <th>Player</th>
+                    <th colspan="2">Score</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>virat Kohli</td>
+                    <td>87 </td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>virat Kohli</td>
+                    <td>87 </td>
+                    <td>1</td>
+                </tr>
+            </tbody>
+    </table>
+    <h1>Row collapse</h1>
+    <table>
+        <thead>
+            <tr>
+                <td>name </td>
+                <td>salary</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>mahesh</td>
+                <td rowspan="3">56000</td>
+            </tr>
+            <tr>
+                <td>mahesh</td>
+            </tr>
+            <tr>
+                <td>mahesh</td>
+            </tr>
+            <tr>
+                <td>mahesh</td>
+                <td>12355</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>

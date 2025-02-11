@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><h1>foams</h1>
+    <fieldset>
+        <legend>Fill Personal Details</legend>
+    <p>input validation</p>
+    <form >
+        <input type="text"
+        id="firstname"
+        placeholder="Enter Name "
+        required
+        minlength="5"
+        maxlength="10">
+        <input type="text" placeholder="Enter Address">
+        <input type="text" placeholder="Enter Address">
+        <input type="text" placeholder="Enter Address">
+        <button type="button">Submit</button>
+    </form>
+</fieldset>
+    <h1>Input Tags</h1>
+    <fieldset>
+        <legend>Input Tags</legend>
+        <fieldset>
+            <legend>simple input tags</legend>
+    <input type="text" placeholder="text">
+    <input type="email" placeholder="email">
+    <input type="number" placeholder="age" min="18" max="120" step="2">
+    <input type="tel" placeholder="Tel-phone">
+    <input type="time" placeholder="time">
+    <input type="date" placeholder="date">
+    <input type="password" placeholder="password">
+    <input type="file" placeholder="Choose file">
+    <input type="range" placeholder="enter range">
+    <input type="search" placeholder="search"></fieldset>
+    <fieldset>
+        <legend>hidden input tags</legend>
+<!-- hidden info want to submit but not show to user  -->
+    <input type="hidden" value="Secret key">
+    <br>
+    </fieldset>
+    <fieldset>
+        <legend>radio input tags</legend>
+<label for="click">mark the option </label><br>
+<!-- radio use when we want to check any one of them -->
+ <!-- when we write same name to all we select any one of them  -->
+    <input id="click" name="gender" type="radio" value="male">
+    <label for="click">male</label>
+    <br>
+    <input id="click" name="gender" type="radio" value="female">
+    <label for="click">female</label>
+    <br>
+    <input id="click" name="gender" type="radio" value="others">
+    <label for="click">other</label>
+    </fieldset>
+    <br>
+    <hr>
+<label for="Language">Select Language</label><br>
+    <select name="lang" id="Language" onchange="">
+        <option value="marathi">marathi</option>
+        <option value="hindi">hindi</option>
+        <option value="english">english</option>
+        <option value="marathi">marathi</option>
+    </select>
+    <hr>
+    <!-- incheck box we select any one option of them  -->
+     <br>
+     <fieldset>
+        <legend>checkbox input tags</legend>
+    <input name="cars-1" id="cars" value="marc" type="checkbox">
+    <label for="cars">Mercedes</label>
+    <input name="cars-2" id="cars" value="marc" type="checkbox">
+    <label for="cars">BMW</label>
+    <input name="cars-3" id="cars" value="marc" type="checkbox">
+    <label for="cars">Porche</label>
+    <input name="cars-4" id="cars" value="marc" type="checkbox">
+    <label for="cars">Ferrari</label>
+    <input name="cars-5" id="cars" value="marc" type="checkbox">
+    <label for="cars">Jaguar</label>
+    </fieldset>
+    <header></header>
+    <section></section>
+    <thead></thead>
+    <tbody></tbody>
+    <caption></caption>
+    <article></article>
+    <main></main>
+    <fieldset></fieldset>
+    <legend></legend>
+    <figure></figure>
+    <figcaption></figcaption>
+    <footer></footer>
+</body>
+</html>

@@ -1,6 +1,6 @@
-const a = "abh";
-console.log((a))
-
-for (let i = 1;i<=5;i++){
-    console.log("this is loop print 5 times")
+function even(num){
+    const num = + prompt("enter number to check even or not ")
+    if(num%2 == 0){
+        console.log("even") 
+    }
 }
