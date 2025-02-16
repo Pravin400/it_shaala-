@@ -39,6 +39,8 @@
 
 /* using -- we can declare the css variable  */
 /* professional way is to write variable in side the :root */
+/* CSS functions are used to dynamically calculate or manipulate values within a stylesheet  */
+/* like calc(),var(),attr(),linear-gradient() */
 /* using var() we can acces the variable where we wan to access it  */
 
 :root{
