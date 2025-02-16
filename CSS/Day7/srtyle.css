@@ -14,7 +14,7 @@
     padding: 10px;
     flex-wrap: wrap;
     /* flex-grow: 2; */
-    flex-shrink: ;
+    /* flex-shrink: ; */
     flex-basis: 2;
 
 }
