@@ -1,0 +1,77 @@
+/* ..,.,,.......,,. */
+.box{
+    background-color: black;
+    height: 200px;
+    width: 200px;
+    /* animation: name duration timing-funtion delay iteration-count direction full-mode; */
+    animation: bounce 5s linear 1 forwards  ;
+
+}
+h1{
+    animation: loading 2s 1  ease-in-out infinite forwards;
+    /* animation: loading time iterations  ease-in-out; */
+}
+
+
+@keyframes loading{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+/* HTML: <div class="loader"></div> */
+/* .loader {
+    width: 50px;
+    aspect-ratio: 1;
+    display: grid;
+    border-radius: 50%;
+    background: conic-gradient(#25b09b 25%,#f03355 0 50%,#514b82 0 75%,#ffa516 0);
+    animation: l22 2s infinite linear;
+  }
+  .loader::before,
+  .loader::after {
+     content: "";
+     grid-area: 1/1;
+     margin: 15%;
+     border-radius: 50%;
+     background: inherit;
+     animation: inherit;
+  }
+  .loader::after {
+     margin: 25%;
+     animation-duration: 3s;
+  }
+  @keyframes l22 {
+    100% {transform: rotate(1turn)}
+  } */
+  /* HTML: <div class="loader"></div> */
+.loader {
+    --s: 20px;
+    
+    --_d: calc(0.353*var(--s));
+    width: calc(var(--s) + var(--_d));
+    aspect-ratio: 1;
+    display: grid;
+  }
+  .loader:before,
+  .loader:after {
+    content: "";
+    grid-area: 1/1;
+    clip-path: polygon(var(--_d) 0,100% 0,100% calc(100% - var(--_d)),calc(100% - var(--_d)) 100%,0 100%,0 var(--_d));
+    background:
+      conic-gradient(from -90deg at calc(100% - var(--_d)) var(--_d),
+       #fff 135deg,#666 0 270deg,#aaa 0);
+    animation: l6 2s infinite;
+  }
+  .loader:after {
+    animation-delay:-1s;
+  }
+  @keyframes l6{
+    0%  {transform:translate(0,0)}
+    25% {transform:translate(30px,0)}
+    50% {transform:translate(30px,30px)}
+    75% {transform:translate(0,30px)}
+    100%{transform:translate(0,0)}
+  }

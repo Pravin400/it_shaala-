@@ -1,0 +1,16 @@
+.box{
+    background-color: black;
+    height: 150px;
+    width: 200px;
+    transition: transform 1s linear;
+ 
+}
+
+.box:hover(){
+    
+    transform: scale(1.1) rotate(180deg) translate(-50px, -100px);
+    /* translate:-50px -l00px;
+    rotate 180deg; 
+    scale: 1.1; */
+   
+}

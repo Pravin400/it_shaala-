@@ -1,0 +1,22 @@
+
+.box{
+    background-color: black;
+    height: 200px;
+    width: 200px;
+    /* animation: name duration timing-funtion delay iteration-count direction full-mode; */
+    animation: bounce 5s linear 1 forwards  ;
+
+}
+
+
+@keyframes bounce{
+    0%{
+        rotate: 0deg;
+        translate: 0px;
+    }
+    100%{
+        rotate: 360deg;
+        background-color: red;
+        translate: 400px;
+    }
+}

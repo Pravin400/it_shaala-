@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: aqua;
+}
+
+.section-left,
+.section-right{
+    height: 100%;
+    width: 50%;
+    border-radius: 2px;
+    background-color: black;
+
+}
+.section-right{
+    background-color: red;
+}
+
+
+/* mobile */
+/* in this condion is older way to represen this  */
+/* not use mostly in  today  */
+/* instead of writing use max-width:640px; */
+
+/* @media (width <= 640px)  */
+@media (max-width:700px )and( min-width:480px) 
+    
+{
+    section{
+        flex-direction: column;
+    }
+    .section-left,
+    .section-right{
+    width: 100%;
+}
+}

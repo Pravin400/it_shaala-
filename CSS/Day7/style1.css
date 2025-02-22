@@ -4,16 +4,14 @@
     box-sizing: border-box;
 }
 
-
 body
 {   height: 100vh;
     display: flex;
     /* flex-direction: row; */
     justify-content: center;
     align-items: center;
-    
-
 }
+
 .box{
     
     /* background-color: black; */
@@ -23,8 +21,7 @@ body
      */
     animation: rotate 1s infinite linear;
 }
-
-    
+   
 @keyframes rotate {
 
     from { transform: rotate(0deg); }
