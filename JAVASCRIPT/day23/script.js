@@ -69,15 +69,67 @@ myArray.forEach((e1)=>{
 
 //map 
 
-const newArray = myArray.map( (el) =>{
+const newArray = myArray.map( (e1) =>{
     return e1.toUpperCase();
 });
 console. log( newArray) ;
 
-const filteredArray
-if (el > e) {
-return
-true;
-} else {
-false;
-return
+
+let nums = [1,2,3,-5,-9]
+const filteredArray = nums.filter((e1) => {
+    return e1 >0;
+//    if (el > e) {
+// return true;
+// } 
+// else {
+
+// return false;
+// }
+})
+
+
+// questionnnn 1
+console.log(filteredArray)
+
+
+let nam = ["ram", "shyam", "raju","bdburao"];
+let abc = nam.map((e1)=>{
+    let star = "**"
+    return star + e1 +star;
+});
+console.log(abc)
+
+// questionnnn 2
+
+const todos = [
+    {
+      id: 1,
+      todo: "Do something nice for someone you care about",
+      completed: false,
+    },
+    {
+      id: 2,
+      todo: "Memorize a poem",
+      completed: true,
+    },
+    {
+      id: 3,
+      todo: "Watch a classic movie",
+      completed: true,
+    },
+    {
+      id: 4,
+      todo: "Watch a documentary",
+      completed: false,
+    },
+    {
+      id: 5,
+      todo: "Invest in cryptocurrency",
+      completed: false,
+    },
+  ];
+
+const complete = todos.filter((e1)=>{
+    return e1.completed;
+})
+console.log(complete);
