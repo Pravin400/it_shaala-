@@ -88,9 +88,10 @@ console.log(array)
 
 
 // merging the array 
-
+/*
 let merge = ["a","b","c"]
 let merge1 = ["a","b","c"]
+let mergeArray = []
 console.log("Before merging")
 console.log(merge);
 console.log(merge1);
@@ -101,5 +102,38 @@ for(let i = 0; i<merge1.length;i++){
 
 console.log("After merging")
 console.log(merge)
+*/
+
+let merge = ["a", "b", "c"];
+let merge1 = ["a", "b", "c"];
+let mergeArray = [];
+
+console.log("Before merging");
+console.log(merge);
+console.log(merge1);
+for (let i = 0; i < merge.length; i++) {
+    mergeArray.push(merge[i]);
+}
+for (let i = 0; i < merge1.length; i++) {
+    mergeArray.push(merge1[i]);
+}
+
+console.log("After merging");
+console.log(mergeArray);
+
 
 // or making the string reverse 
+
+let s1 = "Salman";
+
+let reverse = "";
+let len = s1.length - 1;
+console.log(len)
+for(let i = len;i>=0;i--){
+    reverse += s1[i];
+    
+}
+console.log(reverse)
+// if(i > 0){
+    //     reverse += ","
+    // }
