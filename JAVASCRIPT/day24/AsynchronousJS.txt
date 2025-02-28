@@ -1,0 +1,88 @@
+FLOW OF THE CODE
+### **Memory Execution Flow (JavaScript Execution Context & Call Stack)**
+
+Before the code runs, JavaScript creates a **Global Execution Context** (GEC) and a **Call Stack** to manage function calls. The execution happens in two phases:
+
+1.  **Memory Allocation (Creation Phase)**
+2.  **Code Execution (Execution Phase)**
+
+* * *
+
+### **Step-by-Step Execution in Memory:**
+
+#### **1\. Creation Phase (Memory Allocation)**
+
+*   JavaScript scans the code and **allocates memory** for variables and functions.
+
+Variable / Function
+
+Memory Allocation
+
+`console.log`
+
+Stored as a built-in function
+
+`setTimeout`
+
+Stored as a built-in function
+
+Arrow function inside `setTimeout`
+
+Allocated in memory
+
+* * *
+
+#### **2\. Execution Phase (Line-by-Line Execution)**
+
+Now, JavaScript executes the code **line by line** using the **Call Stack**.
+
+##### **Step 1:** Execute `console.log("a");`
+
+*   `"a"` is printed to the console.
+*   The function call is pushed to the Call Stack → executed → then removed.
+
+##### **Step 2:** Execute `setTimeout(() => { console.log("b"); }, 6000);`
+
+*   `setTimeout` is called.
+*   The **callback function** (`() => { console.log("b"); }`) is registered in **Web APIs** with a timer of `6000ms`.
+*   `setTimeout` itself **does not block the execution** and is removed from the Call Stack.
+
+##### **Step 3:** Execute `console.log("c");`
+
+*   `"c"` is printed to the console.
+*   The function call is pushed to the Call Stack → executed → then removed.
+
+##### **Step 4:** After 6 seconds, the timer completes.
+
+*   The callback function (`console.log("b")`) moves from **Web APIs** to the **Callback Queue**.
+*   The **Event Loop** checks if the Call Stack is empty and pushes the function from the Callback Queue to the Call Stack.
+*   `console.log("b")` is executed and removed from the stack.
+
+* * *
+
+### **Call Stack Flow**
+
+1.  `console.log("a")` → **Executed & Removed**
+2.  `setTimeout()` → **Registers Timer in Web APIs & Removed**
+3.  `console.log("c")` → **Executed & Removed**
+4.  `After 6s`, Callback (`console.log("b")`) → **Executed & Removed**
+
+* * *
+
+### **Final Execution Order in Memory**
+
+1.  `"a"` is executed first.
+2.  `"c"` is executed next.
+3.  `"b"` is executed after 6 seconds.
+
+* * *
+
+### **Key Takeaways**
+
+✔ **Memory Phase:** Functions and variables are allocated in memory before execution.  
+✔ **Execution Phase:** Code runs line by line using the **Call Stack**.  
+✔ **Async Handling:** `setTimeout` registers its callback in **Web APIs**, and it runs only after the main thread is free.
+
+Let me know if you need a diagram or a deeper explanation! 🚀
+
+![Export to Google Doc](chrome-extension://iapioliapockkkikccgbiaalfhoieano/assets/create.svg)![Copy with formatting](chrome-extension://iapioliapockkkikccgbiaalfhoieano/assets/copy.svg)![Select for Multi-select](chrome-extension://iapioliapockkkikccgbiaalfhoieano/assets/multi-select.svg)

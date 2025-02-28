@@ -12,6 +12,9 @@ setInterval(() => {
 console. log( " a");
 setTimeout(() => {
         console. log( "b" )
+    setInterval(() => {
+        console.log("mybr")
+    },2000)
     },6000);
 
     console. log("c" )

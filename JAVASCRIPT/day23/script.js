@@ -62,6 +62,8 @@ one time for each element in the array.
 @param thisArg —An object to which the this keyword can refer in the callbackfn function. If thisArg is
 omitted, undefined is used as the this value.
 */
+
+
 let myArray = ["a","b","c","d"]
 myArray.forEach((e1)=>{
     console.log(e1)
