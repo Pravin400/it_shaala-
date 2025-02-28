@@ -1,3 +1,6 @@
+today Today's topics are.
+Arrays, join, split, map, forEach, filter, array destruction function.
+
 Sure! Here’s a well-structured and **formatted** version of the answer that you can easily **copy and save**. 🚀
 
 * * *
