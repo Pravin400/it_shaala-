@@ -31,15 +31,3 @@ fetch("https://dummyjson.com/todos")
 
 
 
-fetch("https://dummyjson.com/todos")
-  .then((res) => res.json()) // Convert response to JSON
-  .then((data) => {
-    // Clear h1 before adding todos
-    h1.innerHTML = "";
-
-    data.todos.forEach((e1) => {
-      console.log(e1.todo); // Log each todo in the console
-      h1.innerHTML += `<p>${e1.todo}</p>`; // Append each todo as a new paragraph
-    });
-  })
-  .catch((err) => console.log(err));
