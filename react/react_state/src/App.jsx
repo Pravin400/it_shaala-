@@ -2,14 +2,15 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-{/* <Counter/> */}
+import Counter from './Counter';
+
 function App() {
 
-  const [count, updateshow] = useState(false);
-  // const [count, updatecount] = arr;
-  function handleClick(){
-    updateshow (!count)
-  }
+  // const [count, updateshow] = useState(false);
+  // // const [count, updatecount] = arr;
+  // function handleClick(){
+  //   updateshow (!count)
+  // }
 
 
   // const [count, updatecount] = useState(0);
@@ -43,13 +44,13 @@ function App() {
   // }
   return (
     <>
-      <h1>count is {count}</h1>
+      {/* <h1>count is {count}</h1>
       <button onClick={handleClick}>hide/show</button>
-      {count && <h1>Hello</h1>}
+      {count && <h1>Hello</h1>} */}
       {/* <button onClick={handleClick}>increase me</button> */}
       {/* <button onClick={decrement}>decrese me</button>
       <button onClick={reset}>reset me</button> */}
-      
+      <Counter></Counter>
       </>
   )
 }
