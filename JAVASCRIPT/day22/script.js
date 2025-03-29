@@ -1,6 +1,6 @@
 // to import the js from js
 // and need to make file module
-// where we use the or import he js
+// where we use the or import the js
 
 // import { username} from "./main.js"
 // import { greet } from "./main.js"

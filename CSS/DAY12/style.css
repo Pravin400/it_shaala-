@@ -5,7 +5,8 @@
 }
 .container {
     height: 100vh;
-    /* width: 200px; */
+    width: 100%;
+    padding-top: 10px;
     padding: 1rem;
     gap: 1rem;
     display: grid;;
@@ -15,7 +16,7 @@
     /* auto-fit,auto-fill mostly use auto fit  */
     grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
     
-    grid-template-rows: repeat(3,200px);
+    /* grid-template-rows: repeat(3,200px); */
     /* implicit and explicit grid  */
     /* implicit - automatically align  */
     /* explicit - by developr align  */

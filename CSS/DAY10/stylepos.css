@@ -1,8 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .box{
     position: relative;
     top: 100px;
+    left: 100px;
     height: 40vh;
     width: 40vw;
     background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(7,50,148,1) 48%, rgba(0,212,255,1) 100%);
+background: linear-gradient(30deg, rgba(2,0,36,1) 10%, rgba(9,9,121,1) 35%, rgba(7,50,148,1) 55%, rgba(0,212,255,1) 100%);
+
+
 } 
+img{
+    height: 500px;
+    filter: grayscale(80%);
+}

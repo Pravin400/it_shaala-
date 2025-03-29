@@ -1,19 +1,42 @@
 <!DOCTYPE html>
 <html lang="en" class="light">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dark-Light theme</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dark Light Theme</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="parent">
-        <button onclick="Toggle()">theme</button>
-        <h4>Im inside he parent </h4>
+      <select name="system" id="select_theme" onchange="toggleTheme()">
+        <option value="System">System</option>
+        <option value="Light">Light</option>
+        <option value="Dark">Dark</option>
+      </select>
+      <button onclick="toggleTheme()">Toggle theme</button>
+      <h1>I'm h2 inside parent</h1>
     </div>
+
     <script>
-        function Toggle(){
-            document.documentElement.classList.toggle("light")
+      function toggleTheme() {
+        const selectedTheme = document.getElementById("select_theme").value;
+        const rootEl = document.documentElement; // Selects <html>
+
+        if (selectedTheme === "Dark") {
+          rootEl.classList.add("dark");
+        } else {
+          rootEl.classList.remove("dark");
         }
+
+        // If System is selected, apply system preference
+        if (selectedTheme === "System") {
+          if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+            rootEl.classList.add("dark");
+          } else {
+            rootEl.classList.remove("dark");
+          }
+        }
+      }
     </script>
-</body>
+  </body>
 </html>

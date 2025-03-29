@@ -4,7 +4,7 @@
     height: 200px;
     width: 200px;
     /* animation: name duration timing-funtion delay iteration-count direction full-mode; */
-    animation: bounce 5s linear 1 forwards  ;
+    animation: bounce 2s linear 1 forwards  ;
 
 }
 

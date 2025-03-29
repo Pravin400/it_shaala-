@@ -38,8 +38,7 @@ section{
     section{
         flex-direction: column;
     }
-    .section-left,
-    .section-right{
+    .section-left, .section-right{
     width: 100%;
 }
 }

@@ -1,24 +1,27 @@
-*{
-    margin: 0;
+* {
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
-}
-
-html{
-    --bg-color:white;
-    --text-color:black;
-}
-
-/* this use to lknow the users default theme */
-@media (prefers-color-scheme: light) {
-    html{
-
-        --bg-color: black;
-        --text-color: white;   
+  }
+  /* :root */
+  html {
+    --bg-color: white;
+    --text-color: black;
+  }
+  
+  html.dark {
+    --bg-color: black;
+    --text-color: white;
+  }
+  /* @media (prefers-color-scheme: dark) {
+    html {
+      --bg-color: black;
+      --text-color: white;
     }
-}
-
-.parent.c{
-    color: var(--text-color);
+  }
+   */
+  .parent {
+    height: 100vh;
     background-color: var(--bg-color);
-}
+    color: var(--text-color);
+  }
