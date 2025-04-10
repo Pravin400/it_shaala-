@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 
 
-
 const Component = () => {
     
     const [count,setcount] = useState(0);
@@ -19,7 +18,8 @@ const Component = () => {
         <h1>current Count is {count}</h1>
         <h1>previous Count is {countref.current}</h1>
         <button onClick={()=>setcount(count+1)}>Increment</button>      
-        <button onClick={()=>setcount(count-1)}>Decrement</button>      
+        <button onClick={()=>setcount(count-1)}>Decrement</button>  
+            
     </div>
   )
 }

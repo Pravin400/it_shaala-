@@ -1,0 +1,85 @@
+// import { useState } from "react";
+// // import "h8k-components";
+
+// import "./App.css";
+
+// function App() {
+//   const [items, setItems] = useState([]);
+//   const [input, setInput] = useState("");
+
+//   const handleAddItem = () => {
+//     // TODO: Add logic to add input to items list
+//   };
+
+//   return (
+//     <>
+//       <h8k-navbar header="Item List Manager"></h8k-navbar>
+//       <div className="App">
+//         <h3>Item List</h3>
+//         <input
+//           type="text"
+//           value={input}
+//           onChange={(e) => setInput(e.target.value)}
+//           placeholder="Enter item"
+//           data-testid="input-field"
+//         />
+//         <button onClick={handleAddItem} data-testid="add-button">
+//           Add Item
+//         </button>
+//         <ul data-testid="item-list">
+//           {items.map((item, index) => (
+//             <li key={index} data-testid="list-item">
+//               {item}
+//             </li>
+//           ))}
+//         </ul>
+//       </div>
+//     </>
+//   );
+// }
+
+// export default App;
+
+
+import { useState } from "react";
+// import "h8k-components";
+import "./App.css";
+
+function App() {
+  const [items, setItems] = useState([]);
+  const [input, setInput] = useState("");
+
+  const handleAddItem = () => {
+    if (input.trim() === "") return; // Prevent adding empty input
+    setItems([...items, input]);     // Add item to list
+    setInput("");                    // Clear input field
+  };
+
+  return (
+    <>
+      <h8k-navbar header="Item List Manager"></h8k-navbar>
+      <div className="App">
+        <h3>Item List</h3>
+        <input
+          type="text"
+          value={input}
+          onChange={(e) => setInput(e.target.value)}
+          placeholder="Enter item"
+          data-testid="input-field"
+        />
+        <button onClick={handleAddItem} data-testid="add-button">
+          Add Item
+        </button>
+        <ul data-testid="item-list">
+          {items.map((item, index) => (
+            <li key={index} data-testid="list-item">
+              {item}
+            </li>
+          ))}
+        </ul>
+      </div>
+    </>
+  );
+}
+
+export default App;
